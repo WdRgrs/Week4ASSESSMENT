@@ -9,7 +9,35 @@ def sales_reports(log_file): #def marks the start of the function header named '
             print(line) #...it will print the entire line
 #this is a function that will 'comb' through the file 'um-server-01.txt' and print out every line containting the string "Tue", case sensitive.  This does not do any thing by itself, it will need to be called in order execute.
 
-sales_reports(log_file) #this is calling on the sales_reports function with the argument of the log_file variable - this is making the function execute.
+# sales_reports(log_file) #this is calling on the sales_reports function with the argument of the log_file variable - this is making the function execute.
+
+
+
+
+# Did not finish extra credit for python 
+def ten_watermelons(log_file):
+    for line in log_file: 
+        # line = line.rstrip()
+        qty = line[16:18] 
+        if int(qty) >= 10:
+            return line    
+
+
+
+
+
+
+# sales_reports(log_file)
+
+ten_watermelons(log_file)
+
+
+
+
+
+
+
+
 
 #PRINTED INFORMATION FOR MONDAY
 # $ python process.py 
